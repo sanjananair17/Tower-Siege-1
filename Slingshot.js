@@ -3,8 +3,8 @@ class SlingShot{
         var options = {
             bodyA: bodyA,
             pointB: pointB,
-            stiffness: 0.10,
-            length: 50
+            stiffness: 0.15,
+            length: 70
         }
         this.pointB = pointB
         this.sling = Constraint.create(options);
@@ -21,11 +21,9 @@ class SlingShot{
             var pointB = this.pointB;
             push();
             stroke(48,22,8);
-            if(pointA.x < 220){
                 strokeWeight(7);
                 stroke("blue");
-                line(pointA.x - 20, pointA.y, pointB.x - 10, pointB.y);
-            }
+                line(pointA.x - 20, pointA.y - 20, pointB.x - 20, pointB.y);
             pop();
         }
     }   

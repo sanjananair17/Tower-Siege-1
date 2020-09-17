@@ -11,8 +11,8 @@ function setup() {
   world = engine.world;
   Engine.run(engine);
 
-  polygon = new Polygon(50,200,-10);
-  sling = new SlingShot(polygon.body,{x: 100, y: 200});
+  polygon = new Polygon(50,200,-20);
+  sling = new SlingShot(polygon.body,{x: 150, y: 200});
 
   ground = new Ground(500, 580, 1000, 40);
   stand = new Ground(500,450,300,20);
